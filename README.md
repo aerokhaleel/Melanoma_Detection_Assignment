@@ -35,7 +35,9 @@ To build a CNN based model which can accurately detect melanoma. Melanoma is a 
  1.0 basic model
  2.0 Model with augmented layer with drop out
  3.0 Model with augmentor library for imbalance
+![image](https://user-images.githubusercontent.com/104660411/196771908-91b20b8f-332a-45d3-ab89-8084a4d3be5a.png)
 
+By augmentor with sample 500 on each class added in training set. Both training & validation accuracy is improved by 93% & 65%. Model is performing better than previous 2 model seen. But, further model need to fine tune using hyperparameter methods, changing epochs, adding drop out, pooling layer, etc for better accuracy of validation wrt to training accuracy.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
