@@ -26,7 +26,13 @@ To build a CNN based model which can accurately detect melanoma. Melanoma is a 
 - This model doesn't used any pre-trained model using Transfer learning. 
    All the model building process should be based on a custom model.
 - Dataset
-  The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC)
+  The dataset consists of 2357 images of malignant and benign oncological diseases with 9 classes, which were formed from the International Skin Imaging Collaboration (ISIC). Below are the sample of each diseases.
+ 
+  ![image](https://user-images.githubusercontent.com/104660411/196772782-a2a955b5-0c3d-4352-b641-f7eb62ceb30a.png)
+  
+  There is an data imbalace between classes, has been handle using augmentation
+  
+![image](https://user-images.githubusercontent.com/104660411/196772387-cfe4cbe5-7589-48e7-8682-b3d8a1017991.png)
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -35,6 +41,7 @@ To build a CNN based model which can accurately detect melanoma. Melanoma is a 
  1.0 basic model
  2.0 Model with augmented layer with drop out
  3.0 Model with augmentor library for imbalance
+ 
 ![image](https://user-images.githubusercontent.com/104660411/196771908-91b20b8f-332a-45d3-ab89-8084a4d3be5a.png)
 
 By augmentor with sample 500 on each class added in training set. Both training & validation accuracy is improved by 93% & 65%. Model is performing better than previous 2 model seen. But, further model need to fine tune using hyperparameter methods, changing epochs, adding drop out, pooling layer, etc for better accuracy of validation wrt to training accuracy.
